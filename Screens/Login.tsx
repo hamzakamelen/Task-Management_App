@@ -1,10 +1,11 @@
-import { Text, TextInput, TouchableOpacity, View } from "react-native"
+import { KeyboardAvoidingView, Text, TextInput, TouchableOpacity, View } from "react-native"
 import styles from "../styles/style"
 import { Image } from "react-native"
 
 function Login({ navigation }: any) {
     return (
         <>
+        <KeyboardAvoidingView>
             <View style={[styles.bgWhite, styles.h100]}>
                 <Text style={[styles.fs2, styles.ms2, styles.my4, styles.textBlack, styles.textBold]}>Welcome Back!</Text>
                 <Text style={[styles.fs5, styles.ms2, styles.textBlack]}>Please Enter your email address and password for Login</Text>
@@ -28,6 +29,7 @@ function Login({ navigation }: any) {
                     <Text onPress={() => navigation.navigate('SignUp')} style={[styles.textPrimary,{ fontWeight: 'bold', fontSize: 18, textAlign: 'center' }]}> Sign Up</Text>
                 </Text>
             </View>
+            </KeyboardAvoidingView>
         </>
     )
 }

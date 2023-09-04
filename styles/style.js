@@ -305,6 +305,9 @@ const styling = {
   w100: {
     width: "100%",
   },
+  w70:{
+    width:"70%"
+  },
   w75: {
     width: "75%",
   },
@@ -326,6 +329,9 @@ const styling = {
   h60: {
     height: "60%",
   },
+  h40: {
+    height: "40%",
+  },
   h50: {
     height: "50%",
   },
@@ -337,6 +343,9 @@ const styling = {
   },
   h20: {
     height: "20%",
+  },
+  h15: {
+    height: "15%",
   },
   fs: {
     fontSize: 16,
