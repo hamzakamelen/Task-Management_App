@@ -1,13 +1,14 @@
 import React from 'react'
-import { View } from 'react-native'
+import { Text, TextInput, View } from 'react-native'
 import styles from '../styles/style'
+import HMIcon from '../components/Icon';
 
-const Projects = () => {
+function Projects() {
   return (
     <>
-    <View style={[styles.h100,styles.bgWhite]}>
-        
-    </View>
+      <View style={[styles.h100, styles.bgWhite,styles.p2]}>
+        <TextInput style={[styles.input]} placeholder='Search' placeholderTextColor='grey'  />
+      </View>
     </>
   )
 }
