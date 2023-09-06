@@ -8,7 +8,7 @@ import AddTask from '../Screens/AddTask';
 import Chat from '../Screens/Chat';
 import Profile from '../Screens/Profile';
 
-function TabNavigation() {
+function TabNavigation({navigation}:any) {
     const Tab = createBottomTabNavigator()
     return (
         <>
@@ -68,16 +68,15 @@ function TabNavigation() {
                 />
                 <Tab.Screen name="AddTask" component={AddTask}
                     options={{
-                        headerTitleStyle: {
-                            backgroundColor:'white',
+                        tabBarStyle:{
+                            display:"none"
                         },
+                        headerShown:false,
                         headerTitleAlign: "center",
                         tabBarIcon: () => (
-                            <View>
-                                <View style={[styles.bgPrimary,styles.roundedPill,styles.p1, { height:50,width:50 ,marginLeft: -4 }]}>
+                                <View style={[styles.mb,styles.bgPrimary,styles.roundedPill,styles.p1, { height:50,width:50 ,marginLeft: -4 }]}>
                                     <HMIcon name='add' size={30} color="white" />
                                 </View>
-                            </View>
                         )
                     }}
                 />

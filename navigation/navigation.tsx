@@ -21,7 +21,7 @@ const Navigation = () => {
                     headerTitle: "Sign In",
                 }} name="Login" component={Login} />
 
-                <Stack.Screen options={{
+                <Stack.Screen  options={{
                     headerShown: true,
                     headerTitleAlign: "center",
                     headerShadowVisible:false

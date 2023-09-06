@@ -344,6 +344,9 @@ const styling = {
   h20: {
     height: "20%",
   },
+  h13: {
+    height: "13%",
+  },
   h15: {
     height: "15%",
   },
@@ -543,6 +546,9 @@ const styling = {
   p5: {
     padding: 50,
   },
+  py: {
+    paddingVertical: 5,
+  },
   py1: {
     paddingVertical: 10,
   },
@@ -722,6 +728,9 @@ const styling = {
   },
   mt5: {
     marginTop: 50,
+  },
+  mb: {
+    marginBottom: 5,
   },
   mb1: {
     marginBottom: 10,
