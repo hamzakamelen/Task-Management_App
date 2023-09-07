@@ -8,7 +8,7 @@ import AddTask from '../Screens/AddTask';
 import Chat from '../Screens/Chat';
 import Profile from '../Screens/Profile';
 
-function TabNavigation({navigation}:any) {
+function TabNavigation({ navigation }: any) {
     const Tab = createBottomTabNavigator()
     return (
         <>
@@ -40,8 +40,18 @@ function TabNavigation({navigation}:any) {
                         headerShadowVisible: false,
                         headerTitle: "Friday, 26",
                         headerTitleStyle: {
-                            backgroundColor:'white',
+                            backgroundColor: 'white',
                         },
+                        headerLeft: () => (
+                            <View style={[styles.ms2, styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
+                                <HMIcon name='grid-view' size={22} color="black" />
+                            </View>
+                        ),
+                        headerRight: () => (
+                            <View style={[styles.me2, styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
+                                <HMIcon name='notifications' size={23} color="black" />
+                            </View>
+                        ),
                         tabBarIcon: () => (
                             <View>
                                 <View style={[{ marginLeft: 3 }]}>
@@ -54,9 +64,19 @@ function TabNavigation({navigation}:any) {
                 <Tab.Screen name="Projects" component={Projects}
                     options={{
                         headerTitleStyle: {
-                            backgroundColor:'white',
+                            backgroundColor: 'white',
                         },
                         headerTitleAlign: "center",
+                        headerLeft: () => (
+                            <View style={[styles.ms2, styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
+                                <HMIcon name='arrow-back-ios-new' size={20} color="black" />
+                            </View>
+                        ),
+                        headerRight: () => (
+                            <View style={[styles.me2, styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
+                                <HMIcon name='add' size={23} color="black" />
+                            </View>
+                        ),
                         tabBarIcon: () => (
                             <View>
                                 <View style={[{ marginLeft: 3 }]}>
@@ -68,24 +88,34 @@ function TabNavigation({navigation}:any) {
                 />
                 <Tab.Screen name="AddTask" component={AddTask}
                     options={{
-                        tabBarStyle:{
-                            display:"none"
+                        tabBarStyle: {
+                            display: "none"
                         },
-                        headerShown:false,
+                        headerShown: false,
                         headerTitleAlign: "center",
                         tabBarIcon: () => (
-                                <View style={[styles.mb,styles.bgPrimary,styles.roundedPill,styles.p1, { height:50,width:50 ,marginLeft: -4 }]}>
-                                    <HMIcon name='add' size={30} color="white" />
-                                </View>
+                            <View style={[styles.mb, styles.bgPrimary, styles.roundedPill, styles.p1, { height: 50, width: 50, marginLeft: -4 }]}>
+                                <HMIcon name='add' size={30} color="white" />
+                            </View>
                         )
                     }}
                 />
                 <Tab.Screen name="Chat" component={Chat}
                     options={{
                         headerTitleStyle: {
-                            backgroundColor:'white',
+                            backgroundColor: 'white',
                         },
                         headerTitleAlign: "center",
+                        headerLeft: () => (
+                            <View style={[styles.ms2, styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
+                                <HMIcon name='arrow-back-ios-new' size={20} color="black" />
+                            </View>
+                        ),
+                        headerRight: () => (
+                            <View style={[styles.me2, styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
+                                <HMIcon name='add' size={23} color="black" />
+                            </View>
+                        ),
                         tabBarIcon: () => (
                             <View>
                                 <View style={[{ marginLeft: 3 }]}>
@@ -98,8 +128,13 @@ function TabNavigation({navigation}:any) {
                 <Tab.Screen name="Profile" component={Profile}
                     options={{
                         headerTitleStyle: {
-                            backgroundColor:'white',
+                            backgroundColor: 'white',
                         },
+                        headerLeft: () => (
+                            <View style={[styles.ms2, styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
+                                <HMIcon name='arrow-back-ios-new' size={20} color="black" />
+                            </View>
+                        ),
                         headerTitleAlign: "center",
                         tabBarIcon: () => (
                             <View>

@@ -31,7 +31,7 @@ const AddTask = ({navigation}:any) => {
           </View>
           </View>
           <TouchableOpacity onPress={()=>navigation.navigate('Homes')} style={[styles.bgPrimary, styles.roundedPill, styles.p1, { height: 50, width: 50, marginLeft: '42%' }]}>
-            <HMIcon name='add' size={30} color="white" />
+            <HMIcon name='close' size={30} color="white" />
           </TouchableOpacity >
         </View>
       </View></>

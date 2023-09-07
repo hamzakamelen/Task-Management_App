@@ -4,15 +4,15 @@ import styles from "../styles/style"
 function Splash({navigation}:any){
     return(
         <>
-        <View style={[{backgroundColor:'black'}]}>
+        <View style={[styles.bgPrimary]}>
 
         <Image style={{height:350,width:'100%'}} source={require('../Assets/cover.png')} />
-        <View style={[styles.bgWhite,styles.h60,{borderTopRightRadius:50,borderTopLeftRadius:50}]}>
-            <Text style={[styles.textBold,{fontSize:35},styles.textInfo,styles.my3,styles.textCenter]}>Taskcy</Text>
+        <View style={[styles.bgWhite,styles.p3,styles.h60,{borderTopRightRadius:50,borderTopLeftRadius:50}]}>
+            <Text style={[styles.textBold,{fontSize:40},styles.textPrimary,styles.my1,styles.textCenter]}>Taskcy</Text>
             <Text style={[styles.fs1,styles.textBlack,styles.textBold, styles.textCenter]}>Building Better</Text>
             <Text style={[styles.fs1,styles.textBlack,styles.textBold, styles.textCenter]}>Workplaces</Text>
-            <Text style={[{color:"lightgrey",fontSize:15,marginLeft:25,marginRight:25}]}>Create a unique emotional story that describe bettert thsn words</Text>
-        <TouchableOpacity onPress={()=>navigation.navigate('Intro1')} style={[styles.bgInfo,styles.w50,styles.my2,styles.justifyContentCenter,{marginLeft:80,borderRadius:20,height:50}]}>
+            <Text style={[styles.flexCenter,styles.my1,styles.justifyContentCenter,{color:"lightgrey",fontSize:15,marginLeft:35}]}>Create a unique emotional story that describe better than words</Text>
+        <TouchableOpacity onPress={()=>navigation.navigate('Intro1')} style={[styles.bgPrimary,styles.w100,styles.my2,styles.justifyContentCenter,{borderRadius:20,height:50}]}>
             <Text style={[styles.textCenter,styles.textBold,styles.fs4,styles.textWhite]}>Get Started</Text>
         </TouchableOpacity>
         </View>

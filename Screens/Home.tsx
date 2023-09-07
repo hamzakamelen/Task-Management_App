@@ -1,6 +1,7 @@
 import { Image, ScrollView, Text, View } from "react-native";
 import styles from "../styles/style";
 import * as Progress from 'react-native-progress';
+import HMIcon from "../components/Icon";
 
 function Home() {
     return (
@@ -55,7 +56,12 @@ function Home() {
                     
                     <View style={[styles.flexColumn]}>
                         <View style={[styles.flexColumn]}>
+                            <View style={[styles.flexRow]}>
                             <Text style={[styles.textBold, styles.textBlack, styles.fs2, styles.mb2]}>In Progress</Text>
+                            <View style={{marginLeft:'49%',marginTop:6}}>
+                            <HMIcon name='arrow-forward-ios' size={25} color='black' />
+                            </View>
+                            </View>
                             <View style={[styles.border1, styles.mb1, styles.p1, { height: 85, borderColor: 'grey', borderRadius: 10 }]}>
                                 <Text style={{ color: 'grey',fontSize:15 }}>Productivity Mobile App</Text>
                                 <Text style={[styles.textBlack, styles.textBold,{fontSize:17}]}>Create Detail Booking</Text>

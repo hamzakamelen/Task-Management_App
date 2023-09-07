@@ -13,7 +13,7 @@ const Navigation = () => {
     const Stack = createNativeStackNavigator()
     return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="Home">
+            <Stack.Navigator initialRouteName="Splash">
                 <Stack.Screen options={{
                     headerShown: true,
                     headerTitleAlign: "center",

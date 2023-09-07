@@ -531,6 +531,9 @@ const styling = {
 
     elevation: 24,
   },
+  p: {
+    padding: 5,
+  },
   p1: {
     padding: 10,
   },
