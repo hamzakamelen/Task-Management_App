@@ -12,7 +12,7 @@ function Signup({ navigation }: any) {
                 <TextInput style={[styles.ms2, styles.my4, styles.p1, styles.border1, { width: '89%', borderRadius: 16, borderColor: "lightgrey",fontSize:17,color:"black" }]} placeholder="Enter your Name"  placeholderTextColor="grey" />
                 <TextInput style={[styles.ms2, styles.p1, styles.border1, { width: '89%', borderRadius: 16, borderColor: "lightgrey", marginTop: -24,fontSize:17,color:"black" }]} placeholder="Enter your Email" placeholderTextColor="grey" />
                 <TextInput style={[styles.ms2, styles.p1, styles.border1, { width: '89%', borderRadius: 16, marginTop: 14, borderColor: "lightgrey",fontSize:17,color:"black" }]} placeholder="Enter your password" placeholderTextColor="grey" />
-                <TouchableOpacity onPress={()=>navigation.navigate('Login')} style={[styles.p1, styles.m2,styles.my3, styles.bgPrimary, { borderRadius: 15 }]}>
+                <TouchableOpacity onPress={()=>navigation.navigate('Login')} style={[styles.shadowEx,styles.p1, styles.m2,styles.my3, styles.bgPrimary, {shadowColor:'#6f6aee' ,borderRadius: 15 }]}>
                     <Text style={[styles.fs4, styles.textBold, styles.textCenter, styles.textWhite]}>Sign Up</Text>
                 </TouchableOpacity>
                 <Text style={[styles.mb2,{ marginTop:-9 ,color: "grey", fontSize: 18, textAlign: 'center' }]}>Signin with</Text>
@@ -25,7 +25,7 @@ function Signup({ navigation }: any) {
                 </TouchableOpacity>
                </View>
                 <Text style={{marginTop:-15 ,color: "grey", fontSize: 18, textAlign: 'center' }}>Have an account?
-                    <Text onPress={() => navigation.navigate('Login')} style={{ fontWeight: 'bold', color: "darkblue", fontSize: 18, textAlign: 'center' }}> Sign In</Text>
+                    <Text onPress={() => navigation.navigate('Login')} style={{ fontWeight: 'bold', color: "#6f6aee", fontSize: 18, textAlign: 'center' }}> Sign In</Text>
                 </Text>
             </View>
             </KeyboardAvoidingView>

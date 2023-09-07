@@ -531,6 +531,17 @@ const styling = {
 
     elevation: 24,
   },
+  shadowEx: {
+    shadowColor: "rgba(0,0,0,.5)",
+    shadowOffset: {
+      width: 0,
+      height: 12,
+    },
+    shadowOpacity: 1,
+    shadowRadius: 16.0,
+
+    elevation: 50,
+  },
   p: {
     padding: 5,
   },

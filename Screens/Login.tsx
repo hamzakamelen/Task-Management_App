@@ -12,7 +12,7 @@ function Login({ navigation }: any) {
                 <TextInput style={[styles.ms2, styles.my4, styles.p1, styles.border1, { width: '89%', borderRadius: 16, borderColor: "lightgrey",fontSize:17,color:"black" }]} placeholder="Enter your Email" placeholderTextColor="grey" />
                 <TextInput style={[styles.ms2, styles.p1, styles.border1, { width: '89%', borderRadius: 16, marginTop: -10, borderColor: "lightgrey",fontSize:17,color:"black" }]} placeholder="Enter your password" placeholderTextColor="grey" />
                 <Text style={[styles.my1, styles.textBlack, { marginLeft: 210, fontSize: 16 }]}>Forgot Password?</Text>
-                <TouchableOpacity onPress={() => navigation.navigate('Home')} style={[styles.p1, styles.m2, styles.bgPrimary, styles.shadow6, styles.my1, { shadowColor: "#6f6aee", borderRadius: 15 }]}>
+                <TouchableOpacity onPress={() => navigation.navigate('Home')} style={[styles.shadowEx,styles.p1, styles.m2, styles.bgPrimary, styles.my1, { shadowColor: "#6f6aee", borderRadius: 15 }]}>
                     <Text style={[styles.fs4, styles.textBold, styles.textCenter, styles.textWhite]}>Sign In</Text>
                 </TouchableOpacity>
                 <Text style={[styles.my2,{ color: "grey", fontSize: 18, textAlign: 'center' }]}>Signin with</Text>
