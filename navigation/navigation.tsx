@@ -8,8 +8,13 @@ import Intro1 from '../Screens/Intro1';
 import Intro2 from '../Screens/Intro2';
 import Intro3 from '../Screens/Intro3';
 import TabNavigation from './tabnavigation';
-import Home from '../Screens/Home';
-const Navigation = () => {
+import Settings from '../Screens/Settings';
+import EditProfile from '../Screens/EditProfile';
+import { Text, TouchableOpacity, View } from 'react-native';
+import styles from '../styles/style';
+import HMIcon from '../components/Icon';
+import Language from '../Screens/Language';
+const Navigation = ({navigation}:any) => {
     const Stack = createNativeStackNavigator()
     return (
         <NavigationContainer>
@@ -32,7 +37,7 @@ const Navigation = () => {
 
                 <Stack.Screen options={{
                     headerShown: true,
-                    headerBackVisible:false,
+                    headerBackVisible: false,
                     headerTitleAlign: "center",
                     headerShadowVisible: false,
                     headerTitle: "Sign In",
@@ -40,13 +45,53 @@ const Navigation = () => {
 
                 <Stack.Screen options={{
                     headerShown: true,
-                    headerBackVisible:false,
+                    headerBackVisible: false,
                     headerTitleAlign: "center",
                     headerShadowVisible: false
                 }} name="SignUp" component={Signup} />
                 <Stack.Screen options={{
                     headerShown: false
                 }} name="Home" component={TabNavigation} />
+
+                <Stack.Screen options={{
+                    headerShown: true,
+                    headerTitleAlign: "center",
+                    // headerBackVisible:true,
+                    headerShadowVisible: false,
+                    headerLeft: () => (
+                        <TouchableOpacity style={[ styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
+                            <HMIcon name='arrow-back-ios-new' size={20} color="black" />
+                        </TouchableOpacity>
+                    ),
+                }} name="Settings" component={Settings} />
+
+                <Stack.Screen options={{
+                    headerShown: true,
+                    headerTitleAlign: "center",
+                    headerShadowVisible: false,
+                    headerLeft: () => (
+                        <View style={[styles.ms1, styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
+                            <HMIcon name='arrow-back-ios-new' size={20} color="black" />
+                        </View>
+                    ),
+                    headerRight:()=>(
+                    <View style={[styles.ms2]}>
+                    <Text onPress={()=>navigation.navigate('Profile')} style={[styles.textPrimary,styles.fs]}>Save</Text>
+                    </View>
+                    )
+                }} name="EditProfile" component={EditProfile} />
+                
+                    <Stack.Screen options={{
+                    headerShown: true,
+                    headerTitleAlign: "center",
+                    // headerBackVisible:true,
+                    headerShadowVisible: false,
+                    headerLeft: () => (
+                        <TouchableOpacity style={[ styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
+                            <HMIcon name='arrow-back-ios-new' size={20} color="black" />
+                        </TouchableOpacity>
+                    ),
+                }} name="Language" component={Language} />
 
             </Stack.Navigator>
         </NavigationContainer>

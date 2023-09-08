@@ -3,7 +3,7 @@ import { Image, ScrollView, Text, Touchable, TouchableOpacity, View } from 'reac
 import styles from '../styles/style'
 import HMIcon from '../components/Icon'
 
-const Profile = () => {
+const Profile = ({navigation}:any) => {
   return (
     <>
       <ScrollView>
@@ -13,7 +13,7 @@ const Profile = () => {
           </View>
           <Text style={[styles.mt1, styles.textBlack, { fontSize: 23 }, styles.textBold, styles.textCenter]}>Hamza Kamelen</Text>
           <Text style={[styles.textCenter, styles.fs5, { color: 'grey' }]}>@hamza.kamelen</Text>
-          <Text style={[styles.textBlack, styles.textCenter, styles.border1, styles.borderPrimary, styles.fs5, styles.mt1, { borderRadius: 5, marginLeft: 145, marginRight: 150 }]}>Edit</Text>
+          <Text onPress={()=>navigation.navigate('EditProfile')} style={[styles.textBlack, styles.textCenter, styles.border1, styles.borderPrimary, styles.fs5, styles.mt1, { borderRadius: 5, marginLeft: 145, marginRight: 150 }]}>Edit</Text>
           <View style={[styles.flexRow, styles.my2]}>
             <View>
               <View style={[{ marginLeft: 90 }]}>
@@ -50,7 +50,7 @@ const Profile = () => {
               </View>
             </TouchableOpacity>
 
-            <TouchableOpacity style={[styles.mt1, styles.flexRow, styles.border1, { padding: 15, paddingTop: 18, borderColor: "grey", borderRadius: 15 }]}>
+            <TouchableOpacity onPress={()=>navigation.navigate('Settings')} style={[styles.mt1, styles.flexRow, styles.border1, { padding: 15, paddingTop: 18, borderColor: "grey", borderRadius: 15 }]}>
               <Text style={[styles.textBlack, styles.fs5]}>Settings</Text>
               <View style={[styles.border1, { marginLeft: '66.5%', borderRadius: 20 }]}>
                 <HMIcon name="navigate-next" color="black" size={28} />
