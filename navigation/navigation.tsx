@@ -27,13 +27,27 @@ const Navigation = ({ navigation }: any) => {
     }
     return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="SignIn">
+            <Stack.Navigator initialRouteName="Splash">
                 <Stack.Screen options={Noheader} name="Splash" component={Splash} />
                 <Stack.Screen options={Noheader} name="Intro1" component={Intro1} />
                 <Stack.Screen options={Noheader} name="Intro2" component={Intro2} />
                 <Stack.Screen options={Noheader} name="Intro3" component={Intro3} />
-                <Stack.Screen options={{ ...ScreenOptions, headerTitleAlign: "center" }} name="SignIn" component={SignIn} />
-                <Stack.Screen options={{ ...ScreenOptions, headerTitleAlign: "center" }} name="SignUp" component={Signup} />
+                <Stack.Screen options={{
+                ...ScreenOptions, headerTitleAlign: "center",headerTitle:"Sign In",
+                headerLeft:()=>(
+                    <TouchableOpacity style={[styles.border1, styles.p, { borderColor: 'lightgrey', borderRadius: 25 }]}>
+                    <HMIcon name='arrow-back-ios-new' size={20} color="grey" />
+                </TouchableOpacity>
+                )    
+                }} name="SignIn" component={SignIn} />
+                <Stack.Screen options={{
+                ...ScreenOptions, headerTitleAlign: "center",headerTitle:"Sign Up",
+                headerLeft:()=>(
+                    <TouchableOpacity style={[styles.border1, styles.p, { borderColor: 'lightgrey', borderRadius: 25 }]}>
+                    <HMIcon name='arrow-back-ios-new' size={20} color="grey" />
+                </TouchableOpacity>
+                )    
+                }} name="SignUp" component={Signup} />
                 <Stack.Screen options={Noheader} name="Home" component={TabNavigation} />
                 <Stack.Screen options={{
                     ...ScreenOptions, headerTitleAlign: "center",

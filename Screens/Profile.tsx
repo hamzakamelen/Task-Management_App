@@ -13,7 +13,7 @@ const Profile = ({navigation}:any) => {
           </View>
           <Text style={[styles.mt1, styles.textBlack, { fontSize: 23 }, styles.textBold, styles.textCenter]}>Hamza Kamelen</Text>
           <Text style={[styles.textCenter, styles.fs5, { color: 'grey' }]}>@hamza.kamelen</Text>
-          <Text onPress={()=>navigation.navigate('EditProfile')} style={[styles.textBlack, styles.textCenter, styles.border1, styles.borderPrimary, styles.fs5, styles.mt1, { borderRadius: 5, marginLeft: 145, marginRight: 150 }]}>Edit</Text>
+          <Text onPress={()=>navigation.navigate('EditProfile')} style={[styles.textBlack, styles.textCenter, styles.border1, styles.borderPrimary, styles.fs5,styles.p, styles.mt1, { borderRadius: 10, marginLeft: '40%', marginRight: 150 }]}>Edit</Text>
           <View style={[styles.flexRow, styles.my2]}>
             <View>
               <View style={[{ marginLeft: 90 }]}>
@@ -36,30 +36,30 @@ const Profile = ({navigation}:any) => {
           </View>
 
           <View style={[styles.flexColumn, styles.p2,styles.py]}>
-            <TouchableOpacity style={[styles.flexRow, styles.border1, { padding: 15, paddingTop: 18, borderColor: "grey", borderRadius: 15 }]}>
+            <TouchableOpacity style={[styles.flexRow, styles.border1, { padding: 15, paddingTop: 18, borderColor: "darkgrey", borderRadius: 15 }]}>
               <Text style={[styles.textBlack, styles.fs5]}>My Projects</Text>
-              <View style={[styles.border1, { marginLeft: '57%', borderRadius: 20 }]}>
+              <View style={[styles.border1, { borderColor:'grey' ,marginLeft: '57%', borderRadius: 20 }]}>
                 <HMIcon name="navigate-next" color="black" size={28} />
               </View>
             </TouchableOpacity>
 
-            <TouchableOpacity style={[styles.mt1, styles.flexRow, styles.border1, { padding: 15, paddingTop: 18, borderColor: "grey", borderRadius: 15 }]}>
+            <TouchableOpacity style={[styles.mt1, styles.flexRow, styles.border1, { padding: 15, paddingTop: 18, borderColor: "darkgrey", borderRadius: 15 }]}>
               <Text style={[styles.textBlack, styles.fs5]}>Join a Team</Text>
-              <View style={[styles.border1, { marginLeft: '55%', borderRadius: 20 }]}>
+              <View style={[styles.border1, { borderColor:'grey' ,marginLeft: '55%', borderRadius: 20 }]}>
                 <HMIcon name="navigate-next" color="black" size={28} />
               </View>
             </TouchableOpacity>
 
-            <TouchableOpacity onPress={()=>navigation.navigate('Settings')} style={[styles.mt1, styles.flexRow, styles.border1, { padding: 15, paddingTop: 18, borderColor: "grey", borderRadius: 15 }]}>
+            <TouchableOpacity onPress={()=>navigation.navigate('Settings')} style={[styles.mt1, styles.flexRow, styles.border1, { padding: 15, paddingTop: 18, borderColor: "darkgrey", borderRadius: 15 }]}>
               <Text style={[styles.textBlack, styles.fs5]}>Settings</Text>
-              <View style={[styles.border1, { marginLeft: '66.5%', borderRadius: 20 }]}>
+              <View style={[styles.border1, { borderColor:'grey' ,marginLeft: '66.5%', borderRadius: 20 }]}>
                 <HMIcon name="navigate-next" color="black" size={28} />
               </View>
             </TouchableOpacity>
 
-            <TouchableOpacity style={[styles.mt1, styles.flexRow, styles.border1, { padding: 15, paddingTop: 18, borderColor: "grey", borderRadius: 15 }]}>
+            <TouchableOpacity style={[styles.mt1, styles.flexRow, styles.border1, { padding: 15, paddingTop: 18, borderColor: "darkgrey", borderRadius: 15 }]}>
               <Text style={[styles.textBlack, styles.fs5]}>My Task</Text>
-              <View style={[styles.border1, { marginLeft: '65%', borderRadius: 20 }]}>
+              <View style={[styles.border1, { borderColor:'grey' ,marginLeft: '65%', borderRadius: 20 }]}>
                 <HMIcon name="navigate-next" color="black" size={28} />
               </View>
             </TouchableOpacity>

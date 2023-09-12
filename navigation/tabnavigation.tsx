@@ -43,19 +43,19 @@ function TabNavigation({ navigation }: any) {
                             backgroundColor: 'white',
                         },
                         headerLeft: () => (
-                            <View style={[styles.ms2, styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
+                            <View style={[styles.ms2, styles.border1, styles.p, { borderColor: 'darkgrey', borderRadius: 25 }]}>
                                 <HMIcon name='grid-view' size={22} color="black" />
                             </View>
                         ),
                         headerRight: () => (
-                            <View style={[styles.me2, styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
+                            <View style={[styles.me2, styles.border1, styles.p, { borderColor: 'darkgrey', borderRadius: 25 }]}>
                                 <HMIcon name='notifications' size={23} color="black" />
                             </View>
                         ),
                         tabBarIcon: () => (
                             <View>
                                 <View style={[{ marginLeft: 3 }]}>
-                                    <HMIcon name='home' size={30} color="grey" />
+                                    <HMIcon name='home' size={30} color="darkgrey" />
                                 </View>
                             </View>
                         )
@@ -68,19 +68,19 @@ function TabNavigation({ navigation }: any) {
                         },
                         headerTitleAlign: "center",
                         headerLeft: () => (
-                            <View style={[styles.ms2, styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
-                                <HMIcon name='arrow-back-ios-new' size={20} color="black" />
+                            <View style={[styles.ms2, styles.border1, styles.p, { borderColor: 'darkgrey', borderRadius: 25 }]}>
+                                <HMIcon name='arrow-back-ios-new' size={19} color="black" />
                             </View>
                         ),
                         headerRight: () => (
-                            <View style={[styles.me2, styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
+                            <View style={[styles.me2, styles.border1, styles.p, { borderColor: 'darkgrey', borderRadius: 25 }]}>
                                 <HMIcon name='add' size={23} color="black" />
                             </View>
                         ),
                         tabBarIcon: () => (
                             <View>
                                 <View style={[{ marginLeft: 3 }]}>
-                                    <HMIcon name='topic' size={30} color="grey" />
+                                    <HMIcon name='topic' size={30} color="darkgrey" />
                                 </View>
                             </View>
                         )
@@ -107,19 +107,19 @@ function TabNavigation({ navigation }: any) {
                         },
                         headerTitleAlign: "center",
                         headerLeft: () => (
-                            <View style={[styles.ms2, styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
-                                <HMIcon name='arrow-back-ios-new' size={20} color="black" />
+                            <View style={[styles.ms2, styles.border1, styles.p, { borderColor: 'darkgrey', borderRadius: 25 }]}>
+                                <HMIcon name='arrow-back-ios-new' size={19} color="black" />
                             </View>
                         ),
                         headerRight: () => (
-                            <View style={[styles.me2, styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
+                            <View style={[styles.me2, styles.border1, styles.p, { borderColor: 'darkgrey', borderRadius: 25 }]}>
                                 <HMIcon name='add' size={23} color="black" />
                             </View>
                         ),
                         tabBarIcon: () => (
                             <View>
                                 <View style={[{ marginLeft: 3 }]}>
-                                    <HMIcon name='sms' size={30} color="grey" />
+                                    <HMIcon name='sms' size={30} color="darkgrey" />
                                 </View>
                             </View>
                         )
@@ -131,15 +131,15 @@ function TabNavigation({ navigation }: any) {
                             backgroundColor: 'white',
                         },
                         headerLeft: () => (
-                            <View style={[styles.ms2, styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
-                                <HMIcon name='arrow-back-ios-new' size={20} color="black" />
+                            <View style={[styles.ms2, styles.border1, styles.p, { borderColor: 'darkgrey', borderRadius: 25 }]}>
+                                <HMIcon name='arrow-back-ios-new' size={19} color="black" />
                             </View>
                         ),
                         headerTitleAlign: "center",
                         tabBarIcon: () => (
                             <View>
                                 <View style={[{ marginLeft: 3 }]}>
-                                    <HMIcon name='person-outline' size={30} color="grey" />
+                                    <HMIcon name='person-outline' size={30} color="darkgrey" />
                                 </View>
                             </View>
                         )

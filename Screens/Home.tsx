@@ -1,4 +1,4 @@
-import { Image, ScrollView, Text, View } from "react-native";
+import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import styles from "../styles/style";
 import * as Progress from 'react-native-progress';
 import HMIcon from "../components/Icon";
@@ -57,30 +57,29 @@ function Home() {
                     <View style={[styles.flexColumn]}>
                         <View style={[styles.flexColumn]}>
                             <View style={[styles.flexRow]}>
-                            <Text style={[styles.textBold, styles.textBlack, styles.fs2, styles.mb2]}>In Progress</Text>
-                            <View style={{marginLeft:'49%',marginTop:6}}>
-                            <HMIcon name='arrow-forward-ios' size={25} color='black' />
+                            <Text style={[ styles.textBlack,styles.textBold, styles.fs3, styles.mb2]}>In Progress</Text>
+                            <TouchableOpacity style={{marginLeft:'56.2%',marginTop:6}}>
+                            <HMIcon name='arrow-forward-ios' size={23} color='black' />
+                            </TouchableOpacity>
                             </View>
-                            </View>
-                            <View style={[styles.border1, styles.mb1, styles.p1, { height: 85, borderColor: 'grey', borderRadius: 10 }]}>
+                            <View style={[styles.border1, styles.mb1, styles.p1, { height: 85, borderColor: 'darkgrey', borderRadius: 10 }]}>
                                 <Text style={{ color: 'grey',fontSize:15 }}>Productivity Mobile App</Text>
                                 <Text style={[styles.textBlack, styles.textBold,{fontSize:17}]}>Create Detail Booking</Text>
                                 <Text style={{ color: 'grey',fontSize:14.5,paddingTop:2 }}>2 min ago</Text>
                             </View>
 
-                            <View style={[styles.border1, styles.mb1, styles.p1, { height: 85, borderColor: 'grey', borderRadius: 10 }]}>
+                            <View style={[styles.border1, styles.mb1, styles.p1, { height: 85, borderColor: 'darkgrey', borderRadius: 10 }]}>
                                 <Text style={{ color: 'grey',fontSize:15 }}>Productivity Mobile App</Text>
                                 <Text style={[styles.textBlack, styles.textBold,{fontSize:17}]}>Create Detail Booking</Text>
                                 <Text style={{ color: 'grey',fontSize:14.5,paddingTop:2 }}>2 min ago</Text>
                             </View>
 
-                            <View style={[styles.border1, styles.mb1, styles.p1, { height: 85, borderColor: 'grey', borderRadius: 10 }]}>
+                            <View style={[styles.border1, styles.mb1, styles.p1, { height: 85, borderColor: 'darkgrey', borderRadius: 10 }]}>
                                 <Text style={{ color: 'grey',fontSize:15 }}>Productivity Mobile App</Text>
                                 <Text style={[styles.textBlack, styles.textBold,{fontSize:17}]}>Create Detail Booking</Text>
                                 <Text style={{ color: 'grey',fontSize:14.5,paddingTop:2 }}>2 min ago</Text>
                             </View>
-
-                            <View style={[styles.border1, styles.mb1, styles.p1, { height: 85, borderColor: 'grey', borderRadius: 10 }]}>
+                            <View style={[styles.border1, styles.mb1, styles.p1, { height: 85, borderColor: 'darkgrey', borderRadius: 10 }]}>
                                 <Text style={{ color: 'grey',fontSize:15 }}>Productivity Mobile App</Text>
                                 <Text style={[styles.textBlack, styles.textBold,{fontSize:17}]}>Create Detail Booking</Text>
                                 <Text style={{ color: 'grey',fontSize:14.5,paddingTop:2 }}>2 min ago</Text>
