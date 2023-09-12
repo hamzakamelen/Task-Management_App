@@ -80,6 +80,9 @@ const styling = {
   bgBlack: {
     backgroundColor: _black,
   },
+  bgLightBlack:{
+    backgroundColor: "#343a40"
+  },
   bgInfo: {
     backgroundColor: _info,
   },
@@ -683,6 +686,9 @@ const styling = {
   my5: {
     marginVertical: 50,
   },
+  mx: {
+    marginHorizontal: 5,
+  },
   mx1: {
     marginHorizontal: 10,
   },
@@ -697,6 +703,9 @@ const styling = {
   },
   mx5: {
     marginHorizontal: 50,
+  },
+  ms: {
+    marginLeft: 5,
   },
   ms1: {
     marginLeft: 10,
@@ -727,6 +736,9 @@ const styling = {
   },
   me5: {
     marginEnd: 50,
+  },
+  mt: {
+    marginTop: 5,
   },
   mt1: {
     marginTop: 10,

@@ -13,7 +13,7 @@ function Intro1({navigation}:any){
         <Text style={[styles.fs1,styles.ms3,styles.textBlack]}>workflows.</Text>
         </View>
         <View style={[styles.flexRow]}>
-        <TouchableOpacity onPress={()=>navigation.navigate('Login')}>
+        <TouchableOpacity onPress={()=>navigation.navigate('SignIn')}>
             <Text style={[styles.textBlack,styles.ms3,styles.mt2,styles.my1,styles.fs5]}>Skip</Text>
         </TouchableOpacity>
 

@@ -23,7 +23,7 @@ function Signup({ navigation }: any) {
         //     if(res.data.status===false){
         //         setError(res.data.message)
         //     }else{
-                navigation.navigate('Login')
+                navigation.navigate('SignIn')
     //         }
     //     }).catch((err)=>{
     //         console.log(err)
@@ -53,7 +53,7 @@ function Signup({ navigation }: any) {
                 </TouchableOpacity>
                </View>
                 <Text style={{marginTop:-15 ,color: "grey", fontSize: 18, textAlign: 'center' }}>Have an account?
-                    <Text onPress={() => navigation.navigate('Login')} style={{ fontWeight: 'bold', color: "#6f6aee", fontSize: 18, textAlign: 'center' }}> Sign In</Text>
+                    <Text onPress={() => navigation.navigate('SignIn')} style={{ fontWeight: 'bold', color: "#6f6aee", fontSize: 18, textAlign: 'center' }}> Sign In</Text>
                 </Text>
             </View>
             </KeyboardAvoidingView>
