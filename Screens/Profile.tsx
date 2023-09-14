@@ -36,7 +36,7 @@ const Profile = ({navigation}:any) => {
           </View>
 
           <View style={[styles.flexColumn, styles.p2,styles.py]}>
-            <TouchableOpacity style={[styles.flexRow, styles.border1, { padding: 15, paddingTop: 18, borderColor: "darkgrey", borderRadius: 15 }]}>
+            <TouchableOpacity onPress={()=>navigation.navigate('Projects')} style={[styles.flexRow, styles.border1, { padding: 15, paddingTop: 18, borderColor: "darkgrey", borderRadius: 15 }]}>
               <Text style={[styles.textBlack, styles.fs5]}>My Projects</Text>
               <View style={[styles.border1, { borderColor:'grey' ,marginLeft: '57%', borderRadius: 20 }]}>
                 <HMIcon name="navigate-next" color="black" size={28} />

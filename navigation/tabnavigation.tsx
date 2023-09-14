@@ -2,14 +2,16 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from "../Screens/Home"
 import styles from '../styles/style';
 import HMIcon from '../components/Icon';
-import { Text, View } from 'react-native';
+import { Alert, Modal, Pressable, Text, TouchableOpacity, View } from 'react-native';
 import Projects from '../Screens/Projects';
 import AddTask from '../Screens/AddTask';
 import Chat from '../Screens/Chat';
 import Profile from '../Screens/Profile';
+import { useState } from 'react';
 
 function TabNavigation({ navigation }: any) {
     const Tab = createBottomTabNavigator()
+    const [modalVisible, setModalVisible] = useState(false);
     return (
         <>
             <Tab.Navigator
@@ -92,7 +94,6 @@ function TabNavigation({ navigation }: any) {
                             display: "none"
                         },
                         headerShown: false,
-                        headerTitleAlign: "center",
                         tabBarIcon: () => (
                             <View style={[styles.mb, styles.bgPrimary, styles.roundedPill, styles.p1, { height: 50, width: 50, marginLeft: -4 }]}>
                                 <HMIcon name='add' size={30} color="white" />

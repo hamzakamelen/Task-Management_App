@@ -59,23 +59,23 @@ const Navigation = ({ navigation }: any) => {
                 }} name="Settings" component={Settings} />
 
                 <Stack.Screen options={{
-                    ...ScreenOptions, headerTitleAlign: "center",
+                    ...ScreenOptions, headerTitleAlign: "center",headerTitle:"Edit Profile",
                     headerLeft: () => (
-                        <View style={[styles.ms1, styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
-                            <HMIcon name='arrow-back-ios-new' size={20} color="black" />
-                        </View>
+                        <TouchableOpacity style={[styles.ms, styles.border1, styles.p, { borderColor: 'darkgrey', borderRadius: 25 }]}>
+                            <HMIcon name='arrow-back-ios-new' size={18} color="black" />
+                        </TouchableOpacity>
                     ),
                     headerRight: () => (
-                        <View style={[styles.ms2]}>
-                            <Text onPress={() => navigation.navigate('Profile')} style={[styles.textPrimary, styles.fs]}>Save</Text>
-                        </View>
+                        <TouchableOpacity style={[styles.ms2]}>
+                            <Text style={[styles.textPrimary, styles.fs]}>Save</Text>
+                        </TouchableOpacity>
                     )
                 }} name="EditProfile" component={EditProfile} />
 
                 <Stack.Screen options={{
                     ...ScreenOptions, headerTitleAlign: "center",
                     headerLeft: () => (
-                        <TouchableOpacity style={[styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
+                        <TouchableOpacity  style={[styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
                             <HMIcon name='arrow-back-ios-new' size={20} color="black" />
                         </TouchableOpacity>
                     )
