@@ -5,30 +5,30 @@ import { useState } from "react";
 import axios from "axios";
 
 function Signup({ navigation }: any) {
-    // const Backend = 'http://localhost:7000/api/UserRouter/signup'
+    const Backend = 'https://spring-bud-clownfish-tie.cyclic.cloud/api/UserRouter/signup'
     const [userName, setuserName] = useState<string>("");    
     const [email, setemail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
-    // const [Error, setError] = useState<any>("")
+    const [Error, setError] = useState<any>("")
     const SignupData={
         userName,
         email,
         password
     }
     const Submit = ()=>{
-        // if(Error){
-        //     setError("");
-        // }
-        // axios.post(Backend,SignupData).then((res)=>{
-        //     if(res.data.status===false){
-        //         setError(res.data.message)
-        //     }else{
+        if(Error){
+            setError("");
+        }
+        axios.post(Backend,SignupData).then((res)=>{
+            if(res.data.status===false){
+                setError(res.data.message)
+            }else{
                 navigation.navigate('SignIn')
-    //         }
-    //     }).catch((err)=>{
-    //         console.log(err)
-    //         setError("An Error occured Please try Again")
-    //     })
+            }
+        }).catch((err)=>{
+            console.log(err)
+            setError("An Error occured Please try Again")
+        })
     }
     return (
         <>
@@ -42,7 +42,7 @@ function Signup({ navigation }: any) {
                 <TouchableOpacity onPress={()=>Submit()} style={[styles.shadowEx,styles.p1, styles.m2,styles.my3, styles.bgPrimary, {shadowColor:'#6f6aee' ,borderRadius: 15 }]}>
                     <Text style={[styles.fs4, styles.textBold, styles.textCenter, styles.textWhite]}>Sign Up</Text>
                 </TouchableOpacity>
-                {/* {Error && <Text style={[styles.bgDanger,styles.textWhite]}>Error: {Error}</Text>} */}
+                {Error && <Text style={[styles.bgDanger,styles.textWhite]}>Error: {Error}</Text>}
                 <Text style={[styles.mb2,{ marginTop:-9 ,color: "grey", fontSize: 18, textAlign: 'center' }]}>Signin with</Text>
                <View style={[styles.mb3,styles.flexRow]}>
                 <TouchableOpacity style={[styles.border1,{ marginLeft:90,borderRadius:15 ,width: '17%',borderColor:'lightgrey'}]}>
