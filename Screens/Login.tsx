@@ -10,6 +10,7 @@ function SignIn({ navigation }: any) {
     const [password, setpassword] = useState("");
     const [isLoading, setisLoading] = useState(false)
     const [Error, setError] = useState("")
+    
     const LoginData = {
         email,
         password

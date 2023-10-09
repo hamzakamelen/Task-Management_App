@@ -4,10 +4,11 @@ import styles from '../styles/style';
 import HMIcon from '../components/Icon';
 import { Alert, Modal, Pressable, Text, TouchableOpacity, View } from 'react-native';
 import Projects from '../Screens/Projects';
-import AddTask from '../Screens/AddTask';
+import AddTask from '../Screens/Add';
 import Chat from '../Screens/Chat';
 import Profile from '../Screens/Profile';
 import { useState } from 'react';
+import Add from '../Screens/Add';
 
 function TabNavigation({ navigation }: any) {
     const Tab = createBottomTabNavigator()
@@ -88,7 +89,7 @@ function TabNavigation({ navigation }: any) {
                         )
                     }}
                 />
-                <Tab.Screen name="AddTask" component={AddTask}
+                <Tab.Screen name="Add" component={Add}
                     options={{
                         tabBarStyle: {
                             display: "none"
