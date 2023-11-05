@@ -10,7 +10,7 @@ function SignIn({ navigation }: any) {
     const [password, setpassword] = useState("");
     const [isLoading, setisLoading] = useState(false)
     const [Error, setError] = useState("")
-    
+
     const LoginData = {
         email,
         password
@@ -39,7 +39,10 @@ function SignIn({ navigation }: any) {
     return (
         <>
             {/* {isLoading ?? <View style={[styles.flexCenter]}> <ActivityIndicator /> </View> : */}
-             <View style={[styles.bgWhite, styles.p2, styles.h100]}>
+            {/* <View style={[styles.bgWhite,{marginTop:500}]}>
+            <ActivityIndicator size="large" animating={true} />
+            </View> */}
+            <View style={[styles.bgWhite, styles.p2, styles.h100]}>
                 <Text style={[styles.fs2, styles.mt, styles.textBlack, styles.textBold]}>Welcome Back!</Text>
                 <Text style={[styles.fs, styles.mt1, { color: 'grey' }]}>Please Enter your Email address and Password for Login</Text>
                 <TextInput onChangeText={(e) => setemail(e)} style={[styles.mt3, styles.p1, styles.border1, { width: '98%', borderRadius: 16, borderColor: "lightgrey", fontSize: 16.2, color: "black" }]} placeholder="Enter your email" placeholderTextColor="grey" />
@@ -63,6 +66,7 @@ function SignIn({ navigation }: any) {
                     <Text onPress={() => navigation.navigate('SignUp')} style={[styles.textPrimary, { fontWeight: 'bold', fontSize: 18, textAlign: 'center' }]}> Sign Up</Text>
                 </Text>
             </View>
+
         </>
     )
 }
