@@ -29,7 +29,7 @@ const Navigation = ({ navigation }: any) => {
     }
     return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="Splash">
+            <Stack.Navigator initialRouteName="SignIn">
                 <Stack.Screen options={Noheader} name="Splash" component={Splash} />
                 <Stack.Screen options={Noheader} name="Intro1" component={Intro1} />
                 <Stack.Screen options={Noheader} name="Intro2" component={Intro2} />
