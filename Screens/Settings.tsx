@@ -4,7 +4,7 @@ import { Text } from "react-native"
 import HMIcon from "../components/Icon"
 import { useState } from "react";
 
-function Settings({navigation}:any) {
+function Settings({ navigation }: any) {
     const [isEnabled, setIsEnabled] = useState(false);
     const toggleSwitch = () => setIsEnabled(previousState => !previousState);
     return (
@@ -21,8 +21,8 @@ function Settings({navigation}:any) {
                             value={isEnabled}
                         />
                     </View>
-                    <View style={[styles.flexRow,styles.border1, styles.mb2, { padding: 15, borderRadius: 15, borderColor: 'darkgrey' }]}>
-                        <Text style={[ styles.textBlack, styles.fs5]}>Push Notification</Text>
+                    <View style={[styles.flexRow, styles.border1, styles.mb2, { padding: 15, borderRadius: 15, borderColor: 'darkgrey' }]}>
+                        <Text style={[styles.textBlack, styles.fs5]}>Push Notification</Text>
                         <Switch
                             style={[{ marginLeft: '34%' }]}
                             trackColor={{ false: 'grey', true: '#6f6aee' }}
@@ -53,7 +53,7 @@ function Settings({navigation}:any) {
                             <HMIcon name='arrow-forward-ios' size={20} color='grey' />
                         </View>
                     </View>
-                    <TouchableOpacity onPress={()=>navigation.navigate('Language')} style={[styles.flexRow, styles.border1, styles.mb2, { padding: 15, borderRadius: 15, borderColor: 'darkgrey' }]}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Language')} style={[styles.flexRow, styles.border1, styles.mb2, { padding: 15, borderRadius: 15, borderColor: 'darkgrey' }]}>
                         <Text style={[styles.textBlack, styles.fs5]}>Language</Text>
                         <View style={[{ marginLeft: '67%', marginTop: 3 }]}>
                             <HMIcon name='arrow-forward-ios' size={20} color='grey' />

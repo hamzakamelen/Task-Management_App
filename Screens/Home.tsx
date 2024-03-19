@@ -26,7 +26,7 @@ function Home() {
                                 </View>
                             </View>
                         </View>
-                        <View style={[{ height: 192 },styles.ms2, styles.flexRow, styles.mb1]}>
+                        <View style={[{ height: 192 }, styles.ms2, styles.flexRow, styles.mb1]}>
                             <View style={[styles.bgPrimary, styles.p2, { height: 180, borderRadius: 20, width: 290 }]}>
                                 <Text style={[styles.fs2, styles.textBold, styles.textWhite]}>Application Design</Text>
                                 <Text style={[styles.my1]}>UI Design Kit</Text>
@@ -39,7 +39,7 @@ function Home() {
                                 </View>
                             </View>
                         </View>
-                        <View style={[{ height: 192 },styles.ms2, styles.flexRow, styles.mb1]}>
+                        <View style={[{ height: 192 }, styles.ms2, styles.flexRow, styles.mb1]}>
                             <View style={[styles.bgPrimary, styles.p2, { height: 180, borderRadius: 20, width: 290 }]}>
                                 <Text style={[styles.fs2, styles.textBold, styles.textWhite]}>Application Design</Text>
                                 <Text style={[styles.my1]}>UI Design Kit</Text>
@@ -53,36 +53,36 @@ function Home() {
                             </View>
                         </View>
                     </ScrollView>
-                    
+
                     <View style={[styles.flexColumn]}>
                         <View style={[styles.flexColumn]}>
                             <View style={[styles.flexRow]}>
-                            <Text style={[ styles.textBlack,styles.textBold, styles.fs3, styles.mb2]}>In Progress</Text>
-                            <TouchableOpacity style={{marginLeft:'56.2%',marginTop:6}}>
-                            <HMIcon name='arrow-forward-ios' size={23} color='black' />
-                            </TouchableOpacity>
+                                <Text style={[styles.textBlack, styles.textBold, styles.fs3, styles.mb2]}>In Progress</Text>
+                                <TouchableOpacity style={{ marginLeft: '56.2%', marginTop: 6 }}>
+                                    <HMIcon name='arrow-forward-ios' size={23} color='black' />
+                                </TouchableOpacity>
                             </View>
                             <View style={[styles.border1, styles.mb1, styles.p1, { height: 85, borderColor: 'darkgrey', borderRadius: 10 }]}>
-                                <Text style={{ color: 'grey',fontSize:15 }}>Productivity Mobile App</Text>
-                                <Text style={[styles.textBlack, styles.textBold,{fontSize:17}]}>Create Detail Booking</Text>
-                                <Text style={{ color: 'grey',fontSize:14.5,paddingTop:2 }}>2 min ago</Text>
-                            </View>
-
-                            <View style={[styles.border1, styles.mb1, styles.p1, { height: 85, borderColor: 'darkgrey', borderRadius: 10 }]}>
-                                <Text style={{ color: 'grey',fontSize:15 }}>Productivity Mobile App</Text>
-                                <Text style={[styles.textBlack, styles.textBold,{fontSize:17}]}>Create Detail Booking</Text>
-                                <Text style={{ color: 'grey',fontSize:14.5,paddingTop:2 }}>2 min ago</Text>
+                                <Text style={{ color: 'grey', fontSize: 15 }}>Productivity Mobile App</Text>
+                                <Text style={[styles.textBlack, styles.textBold, { fontSize: 17 }]}>Create Detail Booking</Text>
+                                <Text style={{ color: 'grey', fontSize: 14.5, paddingTop: 2 }}>2 min ago</Text>
                             </View>
 
                             <View style={[styles.border1, styles.mb1, styles.p1, { height: 85, borderColor: 'darkgrey', borderRadius: 10 }]}>
-                                <Text style={{ color: 'grey',fontSize:15 }}>Productivity Mobile App</Text>
-                                <Text style={[styles.textBlack, styles.textBold,{fontSize:17}]}>Create Detail Booking</Text>
-                                <Text style={{ color: 'grey',fontSize:14.5,paddingTop:2 }}>2 min ago</Text>
+                                <Text style={{ color: 'grey', fontSize: 15 }}>Productivity Mobile App</Text>
+                                <Text style={[styles.textBlack, styles.textBold, { fontSize: 17 }]}>Create Detail Booking</Text>
+                                <Text style={{ color: 'grey', fontSize: 14.5, paddingTop: 2 }}>2 min ago</Text>
+                            </View>
+
+                            <View style={[styles.border1, styles.mb1, styles.p1, { height: 85, borderColor: 'darkgrey', borderRadius: 10 }]}>
+                                <Text style={{ color: 'grey', fontSize: 15 }}>Productivity Mobile App</Text>
+                                <Text style={[styles.textBlack, styles.textBold, { fontSize: 17 }]}>Create Detail Booking</Text>
+                                <Text style={{ color: 'grey', fontSize: 14.5, paddingTop: 2 }}>2 min ago</Text>
                             </View>
                             <View style={[styles.border1, styles.mb1, styles.p1, { height: 85, borderColor: 'darkgrey', borderRadius: 10 }]}>
-                                <Text style={{ color: 'grey',fontSize:15 }}>Productivity Mobile App</Text>
-                                <Text style={[styles.textBlack, styles.textBold,{fontSize:17}]}>Create Detail Booking</Text>
-                                <Text style={{ color: 'grey',fontSize:14.5,paddingTop:2 }}>2 min ago</Text>
+                                <Text style={{ color: 'grey', fontSize: 15 }}>Productivity Mobile App</Text>
+                                <Text style={[styles.textBlack, styles.textBold, { fontSize: 17 }]}>Create Detail Booking</Text>
+                                <Text style={{ color: 'grey', fontSize: 14.5, paddingTop: 2 }}>2 min ago</Text>
                             </View>
                         </View>
                     </View>

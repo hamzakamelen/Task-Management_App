@@ -17,6 +17,7 @@ import SingleChat from '../Screens/SChat';
 import SignIn from '../Screens/Login';
 import CreateTask from '../Screens/CreateTask';
 import CreateTeam from '../Screens/CreateTeam';
+
 const Navigation = ({ navigation }: any) => {
     const Stack = createNativeStackNavigator()
     const ScreenOptions = {
@@ -29,26 +30,26 @@ const Navigation = ({ navigation }: any) => {
     }
     return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="SignIn">
+            <Stack.Navigator initialRouteName="Splash">
                 <Stack.Screen options={Noheader} name="Splash" component={Splash} />
                 <Stack.Screen options={Noheader} name="Intro1" component={Intro1} />
                 <Stack.Screen options={Noheader} name="Intro2" component={Intro2} />
                 <Stack.Screen options={Noheader} name="Intro3" component={Intro3} />
                 <Stack.Screen options={{
-                ...ScreenOptions, headerTitleAlign: "center",headerTitle:"Sign In",
-                headerLeft:()=>(
-                    <TouchableOpacity style={[styles.border1, styles.p, { borderColor: 'lightgrey', borderRadius: 25 }]}>
-                    <HMIcon name='arrow-back-ios-new' size={20} color="grey" />
-                </TouchableOpacity>
-                )    
+                    ...ScreenOptions, headerTitleAlign: "center", headerTitle: "Sign In",
+                    headerLeft: () => (
+                        <TouchableOpacity style={[styles.border1, styles.p, { borderColor: 'lightgrey', borderRadius: 25 }]}>
+                            <HMIcon name='arrow-back-ios-new' size={20} color="grey" />
+                        </TouchableOpacity>
+                    )
                 }} name="SignIn" component={SignIn} />
                 <Stack.Screen options={{
-                ...ScreenOptions, headerTitleAlign: "center",headerTitle:"Sign Up",
-                headerLeft:()=>(
-                    <TouchableOpacity style={[styles.border1, styles.p, { borderColor: 'lightgrey', borderRadius: 25 }]}>
-                    <HMIcon name='arrow-back-ios-new' size={20} color="grey" />
-                </TouchableOpacity>
-                )    
+                    ...ScreenOptions, headerTitleAlign: "center", headerTitle: "Sign Up",
+                    headerLeft: () => (
+                        <TouchableOpacity style={[styles.border1, styles.p, { borderColor: 'lightgrey', borderRadius: 25 }]}>
+                            <HMIcon name='arrow-back-ios-new' size={20} color="grey" />
+                        </TouchableOpacity>
+                    )
                 }} name="SignUp" component={Signup} />
                 <Stack.Screen options={Noheader} name="Home" component={TabNavigation} />
                 <Stack.Screen options={{
@@ -61,7 +62,7 @@ const Navigation = ({ navigation }: any) => {
                 }} name="Settings" component={Settings} />
 
                 <Stack.Screen options={{
-                    ...ScreenOptions, headerTitleAlign: "center",headerTitle:"Edit Profile",
+                    ...ScreenOptions, headerTitleAlign: "center", headerTitle: "Edit Profile",
                     headerLeft: () => (
                         <TouchableOpacity style={[styles.ms, styles.border1, styles.p, { borderColor: 'darkgrey', borderRadius: 25 }]}>
                             <HMIcon name='arrow-back-ios-new' size={18} color="black" />
@@ -77,7 +78,7 @@ const Navigation = ({ navigation }: any) => {
                 <Stack.Screen options={{
                     ...ScreenOptions, headerTitleAlign: "center",
                     headerLeft: () => (
-                        <TouchableOpacity  style={[styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
+                        <TouchableOpacity style={[styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
                             <HMIcon name='arrow-back-ios-new' size={20} color="black" />
                         </TouchableOpacity>
                     )
@@ -86,20 +87,20 @@ const Navigation = ({ navigation }: any) => {
                 <Stack.Screen options={{
                     ...ScreenOptions, headerTitleAlign: "center",
                     headerLeft: () => (
-                        <TouchableOpacity  style={[styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
+                        <TouchableOpacity style={[styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
                             <HMIcon name='arrow-back-ios-new' size={20} color="black" />
                         </TouchableOpacity>
                     ),
-                    headerTitle:'Add Task'
+                    headerTitle: 'Add Task'
                 }} name="AddTask" component={CreateTask} />
-                                <Stack.Screen options={{
+                <Stack.Screen options={{
                     ...ScreenOptions, headerTitleAlign: "center",
                     headerLeft: () => (
-                        <TouchableOpacity  style={[styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
+                        <TouchableOpacity style={[styles.border1, styles.p, { borderColor: 'grey', borderRadius: 25 }]}>
                             <HMIcon name='arrow-back-ios-new' size={20} color="black" />
                         </TouchableOpacity>
                     ),
-                    headerTitle:'Create Team'
+                    headerTitle: 'Create Team'
                 }} name="CreateTeam" component={CreateTeam} />
             </Stack.Navigator>
         </NavigationContainer>

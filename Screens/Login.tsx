@@ -18,6 +18,11 @@ function SignIn({ navigation }: any) {
 
     const Submit = () => {
         setisLoading(true)
+        if (email == "" || password == "") {
+            setError("Invalid Email or Password")
+            setisLoading(false)
+            return
+        }
         if (Error) {
             setError("");
         }
@@ -31,17 +36,13 @@ function SignIn({ navigation }: any) {
             }
         }).catch((err) => {
             console.log(err)
-            setError("An Error occured Please try Again")
             setisLoading(false)
+            setError("An Error occured")
         })
     }
 
     return (
         <>
-            {/* {isLoading ?? <View style={[styles.flexCenter]}> <ActivityIndicator /> </View> : */}
-            {/* <View style={[styles.bgWhite,{marginTop:500}]}>
-            <ActivityIndicator size="large" animating={true} />
-            </View> */}
             <View style={[styles.bgWhite, styles.p2, styles.h100]}>
                 <Text style={[styles.fs2, styles.mt, styles.textBlack, styles.textBold]}>Welcome Back!</Text>
                 <Text style={[styles.fs, styles.mt1, { color: 'grey' }]}>Please Enter your Email address and Password for Login</Text>
@@ -49,9 +50,9 @@ function SignIn({ navigation }: any) {
                 <TextInput onChangeText={(e) => setpassword(e)} style={[styles.mt2, styles.p1, styles.border1, { width: '98%', borderRadius: 16, borderColor: "lightgrey", fontSize: 16.2, color: "black" }]} placeholder="Enter your password" placeholderTextColor="grey" />
                 <Text style={[styles.mt2, styles.mb1, styles.textBlack, { marginLeft: 180, fontSize: 16 }]}>Forgot password?</Text>
                 <TouchableOpacity onPress={() => Submit()} style={[styles.shadowEx, styles.p1, styles.my1, styles.bgPrimary, { shadowColor: "#6f6aee", borderRadius: 15 }]}>
-                    <Text style={[styles.fs4, styles.textBold, styles.textCenter, styles.textWhite]}>Sign In</Text>
+                    <Text style={[styles.fs4, styles.textBold, styles.textCenter, styles.textWhite]}>{isLoading ? <ActivityIndicator size="large" /> : <Text>Sign In</Text>}</Text>
                 </TouchableOpacity>
-                {Error && <Text style={[styles.bgDanger, styles.p, styles.textWhite]}>Error: {Error}</Text>}
+                {Error && <Text style={[styles.p, styles.textDanger, styles.textBold, styles.textCenter, styles.fs5]}>{Error}! Try Again</Text>}
                 <Text style={[styles.mt2, { color: "grey", fontSize: 18, textAlign: 'center' }]}>Signin with</Text>
                 <View style={[styles.my3, styles.flexRow]}>
                     <TouchableOpacity style={[styles.border1, { marginLeft: 90, borderRadius: 15, width: '17%', borderColor: 'lightgrey' }]}>

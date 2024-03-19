@@ -4,13 +4,13 @@ import styles from '../styles/style'
 import HMIcon from '../components/Icon'
 
 const CreateTeam = () => {
-    const [avatar,setAvatar] = useState(null)
+    const [avatar, setAvatar] = useState(null)
     return (
         <View style={[styles.h100, styles.bgWhite, styles.p2]}>
             <View style={[styles.my1]}>
-                <Image style={{height:150,width:150,marginLeft:80,borderRadius:150}} source={{uri:avatar?avatar:'https://www.simplewebsite.fr/blog/wp-content/uploads/2020/05/69ca4ea5753c897ba260e55c368612ea.png'}} />
-            <Text style={[styles.fs4,styles.textBlack,styles.mt,styles.textCenter]}>Upload Logo File</Text>
-            <Text style={[styles.fs,styles.mt,styles.textCenter,{color:'grey'}]}>Your Logo will publish always</Text>
+                <Image style={{ height: 150, width: 150, marginLeft: 80, borderRadius: 150 }} source={{ uri: avatar ? avatar : 'https://www.simplewebsite.fr/blog/wp-content/uploads/2020/05/69ca4ea5753c897ba260e55c368612ea.png' }} />
+                <Text style={[styles.fs4, styles.textBlack, styles.mt, styles.textCenter]}>Upload Logo File</Text>
+                <Text style={[styles.fs, styles.mt, styles.textCenter, { color: 'grey' }]}>Your Logo will publish always</Text>
             </View>
             <View style={[styles.my1]}>
                 <Text style={[styles.textBlack, styles.fs, { color: 'grey' }]}>Task Name</Text>

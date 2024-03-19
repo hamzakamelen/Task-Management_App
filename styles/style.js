@@ -80,7 +80,7 @@ const styling = {
   bgBlack: {
     backgroundColor: _black,
   },
-  bgLightBlack:{
+  bgLightBlack: {
     backgroundColor: "#343a40"
   },
   bgInfo: {
@@ -308,8 +308,8 @@ const styling = {
   w100: {
     width: "100%",
   },
-  w70:{
-    width:"70%"
+  w70: {
+    width: "70%"
   },
   w75: {
     width: "75%",

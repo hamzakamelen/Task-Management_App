@@ -19,7 +19,7 @@ function Projects() {
           </View>
         </View>
         <ScrollView>
-          <View style={[styles.border1 ,styles.p2, {height:128,borderColor: 'darkgrey', borderRadius: 17 }]}>
+          <View style={[styles.border1, styles.p2, { height: 128, borderColor: 'darkgrey', borderRadius: 17 }]}>
             <View style={[styles.flexRow]}>
               <Text style={[styles.textBlack, styles.fs5]}>Unity Dashboard ☺️</Text>
               <Text style={[styles.border1, styles.borderSuccess, styles.textBlack, { padding: 5, borderRadius: 15, marginLeft: 70 }]}>10/20</Text>
@@ -33,7 +33,7 @@ function Projects() {
               </View>
             </View>
           </View>
-          <View style={[styles.border1,styles.mt1 ,styles.p2, {height:128,borderColor: 'darkgrey', borderRadius: 17 }]}>
+          <View style={[styles.border1, styles.mt1, styles.p2, { height: 128, borderColor: 'darkgrey', borderRadius: 17 }]}>
             <View style={[styles.flexRow]}>
               <Text style={[styles.textBlack, styles.fs5]}>Unity Dashboard ☺️</Text>
               <Text style={[styles.border1, styles.borderSuccess, styles.textBlack, { padding: 5, borderRadius: 15, marginLeft: 70 }]}>10/20</Text>
@@ -48,7 +48,7 @@ function Projects() {
             </View>
           </View>
 
-          <View style={[styles.border1,styles.mt1 ,styles.p2, {height:128,borderColor: 'darkgrey', borderRadius: 17 }]}>
+          <View style={[styles.border1, styles.mt1, styles.p2, { height: 128, borderColor: 'darkgrey', borderRadius: 17 }]}>
             <View style={[styles.flexRow]}>
               <Text style={[styles.textBlack, styles.fs5]}>Unity Dashboard ☺️</Text>
               <Text style={[styles.border1, styles.borderSuccess, styles.textBlack, { padding: 5, borderRadius: 15, marginLeft: 70 }]}>10/20</Text>
@@ -63,7 +63,7 @@ function Projects() {
             </View>
           </View>
 
-          <View style={[styles.border1,styles.mt1 ,styles.p2, {height:128,borderColor: 'darkgrey', borderRadius: 17 }]}>
+          <View style={[styles.border1, styles.mt1, styles.p2, { height: 128, borderColor: 'darkgrey', borderRadius: 17 }]}>
             <View style={[styles.flexRow]}>
               <Text style={[styles.textBlack, styles.fs5]}>Unity Dashboard ☺️</Text>
               <Text style={[styles.border1, styles.borderSuccess, styles.textBlack, { padding: 5, borderRadius: 15, marginLeft: 70 }]}>10/20</Text>
