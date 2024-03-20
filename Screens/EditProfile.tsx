@@ -10,20 +10,20 @@ function EditProfile() {
                 </View>
                 <View style={[styles.p2]}>
                     <View style={[styles.mt1]}>
-                        <Text style={[styles.textBlack, styles.fs]}>Name</Text>
-                        <TextInput style={[styles.border1, styles.ps1, styles.mt1, styles.fs, { borderRadius: 15, borderColor: 'grey' }]} placeholder="Enter your Name" placeholderTextColor='black' />
+                        <Text style={[styles.textBlack, styles.fs]}>Name:</Text>
+                        <TextInput style={[styles.border1, styles.ps1, styles.mt1, styles.fs, { borderRadius: 15, borderColor: 'grey' }]} placeholder="Hamza Kamelen" placeholderTextColor='lightgrey' />
                     </View>
                     <View style={[styles.mt1]}>
-                        <Text style={[styles.textBlack, styles.fs]}>Email</Text>
-                        <TextInput style={[styles.border1, styles.ps1, styles.mt1, styles.fs, { borderRadius: 15, borderColor: 'grey' }]} placeholder="Enter your Email" placeholderTextColor='black' />
+                        <Text style={[styles.textBlack, styles.fs]}>Email:</Text>
+                        <TextInput style={[styles.border1, styles.ps1, styles.mt1, styles.fs, { borderRadius: 15, borderColor: 'grey' }]} placeholder="abc@gmail.com" placeholderTextColor='lightgrey' />
                     </View>
                     <View style={[styles.mt1]}>
-                        <Text style={[styles.textBlack, styles.fs]}>User Name</Text>
-                        <TextInput style={[styles.border1, styles.ps1, styles.mt1, styles.fs, { borderRadius: 15, borderColor: 'grey' }]} placeholder="Enter your User Name" placeholderTextColor='black' />
+                        <Text style={[styles.textBlack, styles.fs]}>User Name:</Text>
+                        <TextInput style={[styles.border1, styles.ps1, styles.mt1, styles.fs, { borderRadius: 15, borderColor: 'grey' }]} placeholder="hamza_kamelen" placeholderTextColor='lightgrey' />
                     </View>
                     <View style={[styles.mt1]}>
-                        <Text style={[styles.textBlack, styles.fs]}>Number</Text>
-                        <TextInput style={[styles.border1, styles.ps1, styles.mt1, styles.fs, { borderRadius: 15, borderColor: 'grey' }]} placeholder="Enter your Number" placeholderTextColor='black' />
+                        <Text style={[styles.textBlack, styles.fs]}>Number:</Text>
+                        <TextInput style={[styles.border1, styles.ps1, styles.mt1, styles.fs, { borderRadius: 15, borderColor: 'grey' }]} placeholder="+92-312-3456789" placeholderTextColor='lightgrey' />
                     </View>
                 </View>
             </View>

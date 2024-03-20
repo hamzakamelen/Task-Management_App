@@ -64,12 +64,12 @@ const Navigation = ({ navigation }: any) => {
                 <Stack.Screen options={{
                     ...ScreenOptions, headerTitleAlign: "center", headerTitle: "Edit Profile",
                     headerLeft: () => (
-                        <TouchableOpacity style={[styles.ms, styles.border1, styles.p, { borderColor: 'darkgrey', borderRadius: 25 }]}>
+                        <TouchableOpacity onPress={()=>navigation.navigate('Home')} style={[styles.ms, styles.border1, styles.p, { borderColor: 'darkgrey', borderRadius: 25 }]}>
                             <HMIcon name='arrow-back-ios-new' size={18} color="black" />
                         </TouchableOpacity>
                     ),
                     headerRight: () => (
-                        <TouchableOpacity style={[styles.ms2]}>
+                        <TouchableOpacity onPress={()=>navigation.navigate('Home')} style={[styles.ms2]}>
                             <Text style={[styles.textPrimary, styles.fs]}>Save</Text>
                         </TouchableOpacity>
                     )
